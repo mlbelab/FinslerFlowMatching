@@ -1,0 +1,96 @@
+{
+  "dim": 20,
+  "arm": "mfm_land",
+  "seed": 1,
+  "stage": "sweep",
+  "block": "harness",
+  "budget": "release-matched",
+  "override": {
+    "land_rho": 0.01
+  },
+  "hparams": {
+    "rho": 0.03,
+    "c": 0.9,
+    "target_trace": 2.0,
+    "metric_form": "randers",
+    "drift_mode": "asym",
+    "sigma_mode": "sym",
+    "mobility_mode": "reg",
+    "sde_noise_mobility": "trained",
+    "a_floor": 0.1,
+    "fw_lambda": 0.03,
+    "eps_kernel_scale": 1.0,
+    "land_gamma": 0.2,
+    "land_rho": 0.01,
+    "land_alpha": 1.0,
+    "land_kind": "auto",
+    "ot_K": 8,
+    "ot_max_pts": 600,
+    "blur_frac": 0.1,
+    "lr": 0.0001,
+    "width": 256,
+    "depth": 3,
+    "batch_size": 256,
+    "phase1_iters": 3000,
+    "phase2_iters": 3000,
+    "grad_clip": 5.0,
+    "curly_alpha": 0.01,
+    "curly_sigma": 0.01,
+    "curly_k": 30,
+    "curly_coupling_batch": 128,
+    "curly_net": "release",
+    "sigma": 0.15,
+    "sbm_iters": 3000,
+    "noise_off_after": 1.0
+  },
+  "metrics": {
+    "W2_endpoint": 5.684332698327972,
+    "W2_intermediate": 5.634580362490968,
+    "objective": 5.65945653040947,
+    "n_val_cells": 330,
+    "n_val_end_cells": 491
+  },
+  "ts_diag": {
+    "n_train": 5562,
+    "n_p0": 2781,
+    "n_p1": 2781,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.7056585100549374,
+    "cos_J_velocity": 0.26458286197122904
+  },
+  "arm_diag": {
+    "ot": {
+      "n0": 600,
+      "n1": 600,
+      "C_median": 2888.41455078125,
+      "C_min": 609.6375732421875,
+      "pi_entropy_frac": 0.935272589416884
+    },
+    "loss_phase1": 4045.89759765625,
+    "loss_phase2": 2.287164309024811
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 807.5948125813487
+  },
+  "train_seconds": 127.91102981567383,
+  "n_steps": 300,
+  "smoke": false,
+  "wave": 1,
+  "index": 19,
+  "point": {
+    "land_rho": 0.01
+  }
+}

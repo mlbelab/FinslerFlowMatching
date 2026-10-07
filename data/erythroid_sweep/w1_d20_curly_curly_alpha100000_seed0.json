@@ -1,0 +1,101 @@
+{
+  "dim": 20,
+  "arm": "curly",
+  "seed": 0,
+  "stage": "sweep",
+  "block": "harness",
+  "budget": "release-matched",
+  "override": {
+    "curly_alpha": 100000.0
+  },
+  "hparams": {
+    "rho": 0.03,
+    "c": 0.9,
+    "target_trace": 2.0,
+    "metric_form": "randers",
+    "drift_mode": "asym",
+    "sigma_mode": "sym",
+    "mobility_mode": "reg",
+    "sde_noise_mobility": "trained",
+    "a_floor": 0.1,
+    "fw_lambda": 0.03,
+    "eps_kernel_scale": 1.0,
+    "land_gamma": 0.2,
+    "land_rho": 0.001,
+    "land_alpha": 1.0,
+    "land_kind": "auto",
+    "ot_K": 8,
+    "ot_max_pts": 600,
+    "blur_frac": 0.1,
+    "lr": 0.0001,
+    "width": 256,
+    "depth": 3,
+    "batch_size": 256,
+    "phase1_iters": 3000,
+    "phase2_iters": 3000,
+    "grad_clip": 5.0,
+    "curly_alpha": 100000.0,
+    "curly_sigma": 0.01,
+    "curly_k": 30,
+    "curly_coupling_batch": 128,
+    "curly_net": "release",
+    "sigma": 0.15,
+    "sbm_iters": 3000,
+    "noise_off_after": 1.0
+  },
+  "metrics": {
+    "W2_endpoint": 3.977916003966181,
+    "W2_intermediate": 6.616284561640134,
+    "objective": 5.297100282803157,
+    "n_val_cells": 330,
+    "n_val_end_cells": 491
+  },
+  "ts_diag": {
+    "n_train": 5562,
+    "n_p0": 2781,
+    "n_p1": 2781,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.7056585100549374,
+    "cos_J_velocity": 0.26458286197122904
+  },
+  "arm_diag": {
+    "curly": {
+      "geo_iters": 3000,
+      "vel_iters": 3000,
+      "loss_geo": 197049975603.2,
+      "loss_vel": 2.1971599650382996,
+      "alpha": 100000.0,
+      "sigma": 0.01,
+      "k": 30,
+      "net": "release",
+      "n_ref": 5562
+    },
+    "loss_phase1": 197049975603.2,
+    "loss_phase2": 2.1971599650382996,
+    "velocity_source": "measured"
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 807.5948125813487
+  },
+  "train_seconds": 168.9136700630188,
+  "n_steps": 300,
+  "smoke": false,
+  "wave": 1,
+  "index": 46,
+  "point": {
+    "curly_alpha": 100000.0
+  }
+}

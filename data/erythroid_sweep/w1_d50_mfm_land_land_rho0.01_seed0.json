@@ -1,0 +1,96 @@
+{
+  "dim": 50,
+  "arm": "mfm_land",
+  "seed": 0,
+  "stage": "sweep",
+  "block": "harness",
+  "budget": "release-matched",
+  "override": {
+    "land_rho": 0.01
+  },
+  "hparams": {
+    "rho": 0.03,
+    "c": 0.9,
+    "target_trace": 2.0,
+    "metric_form": "randers",
+    "drift_mode": "asym",
+    "sigma_mode": "sym",
+    "mobility_mode": "reg",
+    "sde_noise_mobility": "trained",
+    "a_floor": 0.1,
+    "fw_lambda": 0.03,
+    "eps_kernel_scale": 1.0,
+    "land_gamma": 0.2,
+    "land_rho": 0.01,
+    "land_alpha": 1.0,
+    "land_kind": "auto",
+    "ot_K": 8,
+    "ot_max_pts": 600,
+    "blur_frac": 0.1,
+    "lr": 0.0001,
+    "width": 256,
+    "depth": 3,
+    "batch_size": 256,
+    "phase1_iters": 3000,
+    "phase2_iters": 3000,
+    "grad_clip": 5.0,
+    "curly_alpha": 0.01,
+    "curly_sigma": 0.01,
+    "curly_k": 30,
+    "curly_coupling_batch": 128,
+    "curly_net": "release",
+    "sigma": 0.15,
+    "sbm_iters": 3000,
+    "noise_off_after": 1.0
+  },
+  "metrics": {
+    "W2_endpoint": 6.985927231996579,
+    "W2_intermediate": 7.00428980690291,
+    "objective": 6.995108519449744,
+    "n_val_cells": 330,
+    "n_val_end_cells": 491
+  },
+  "ts_diag": {
+    "n_train": 5562,
+    "n_p0": 2781,
+    "n_p1": 2781,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.6885167988652725,
+    "cos_J_velocity": 0.11505459249225927
+  },
+  "arm_diag": {
+    "ot": {
+      "n0": 600,
+      "n1": 600,
+      "C_median": 32391.947265625,
+      "C_min": 5719.2626953125,
+      "pi_entropy_frac": 0.9737260492346005
+    },
+    "loss_phase1": 34957.6532421875,
+    "loss_phase2": 1.4975140058994294
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 885.9145577873842
+  },
+  "train_seconds": 287.9321939945221,
+  "n_steps": 300,
+  "smoke": false,
+  "wave": 1,
+  "index": 18,
+  "point": {
+    "land_rho": 0.01
+  }
+}
