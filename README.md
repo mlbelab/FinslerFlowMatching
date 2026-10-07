@@ -1,18 +1,4 @@
 # Finsler Flow Matching
-
-Given a transition matrix `P` over a point cloud, we take two spatial moments of it,
-
-```
-b₀(xᵢ) = Σⱼ Pᵢⱼ Δᵢⱼ                 the local drift
-D̃(xᵢ) = Σⱼ Pᵢⱼ Δᵢⱼ Δᵢⱼᵀ             the local spread        (Δᵢⱼ = xⱼ − xᵢ)
-```
-
-and build the regularised Freidlin–Wentzell action of the SDE that `P` estimates:
-
-```
-F(x, v) = √(vᵀ C_ρ⁻¹ v) · √(‖b₀‖²_{C_ρ⁻¹} + λ²)  −  vᵀ C_ρ⁻¹ b₀ ,     C_ρ = D̃ + ρI
-```
-
 Training is three phases:
 
 1. **Geodesic interpolant** — fit `φ` by minimising `E F(x_t, ẋ_t)²`.
@@ -128,13 +114,12 @@ The baselines are the authors' own code, vendored under their MIT licences in
 `scripts/core/vendor/`, with the upstream file and line recorded per function:
 
 - Kapusniak et al. (2024), *Metric Flow Matching for Smooth Interpolations on the Data
-  Manifold* — the MFM/LAND arm.
-- Petrović et al. (2025), *Curly Flow Matching* — the Curly-FM arm and the erythroid
+  Manifold*
+- Petrović et al. (2025), *Curly Flow Matching* the Curly-FM arm and the erythroid
   benchmark's shape.
-- Tong et al. (2024), *Simulation-free Schrödinger bridges via score and flow matching* —
-  the OT-CFM arm and the bridge formulation Path B follows.
+- Tong et al. (2024), *Simulation-free Schrödinger bridges via score and flow matching* 
 
-Data: Bastidas-Ponce et al. (2019) pancreatic endocrinogenesis, via scVelo; Pijuan-Sala et
+Data: Bastidas-Ponce et al. (2019) pancreatic endocrinogenesis Pijuan-Sala et
 al. (2019) mouse gastrulation atlas; He et al. (2022), *Lineage recording in human
 cerebral organoids*.
 
