@@ -1,0 +1,60 @@
+{
+ "arm": "ffm_full",
+ "common": {
+  "W2_end": 5.508870883904987,
+  "W2_mid": 10.472068903339693,
+  "pi_entropy_frac": 0.9965767860412598,
+  "t_ot": 0.0,
+  "t_phase1": 101.5,
+  "t_phase3": 18.0,
+  "total_s": 119.6,
+  "val_W2_endpoint": 5.919560628900613,
+  "val_W2_intermediate": 10.472451457724278,
+  "val_objective": 8.196006043312446
+ },
+ "diag": {
+  "P_asymmetry": 0.7419736066075452,
+  "d": 20,
+  "n_end_ref": 1232,
+  "n_mid_ref": 1112,
+  "n_p0": 1232,
+  "n_p1": 1232,
+  "n_train": 2464,
+  "n_val_end": 185,
+  "n_val_sel": 120
+ },
+ "floors": {
+  "W2_end": 4.437151009620029,
+  "W2_mid": 4.143370183138506
+ },
+ "key": "pancreas20",
+ "points": {
+  "common": {
+   "lam_mult": 1.0,
+   "rho_mult": 0.00316
+  },
+  "specific": {
+   "lam_mult": 1.0,
+   "rho_mult": 0.00316
+  }
+ },
+ "scales": {
+  "a_bar": 0.34366428077995004,
+  "a_star": 38.836389677122725,
+  "rho_star": 0.6943553728503457
+ },
+ "seed": 2,
+ "smoke": false,
+ "specific": {
+  "W2_end": 5.447253117767997,
+  "W2_mid": 10.51593820073754,
+  "pi_entropy_frac": 0.997161328792572,
+  "t_ot": 1.0,
+  "t_phase1": 101.5,
+  "t_phase3": 17.2,
+  "total_s": 119.7,
+  "val_W2_endpoint": 5.867771445294461,
+  "val_W2_intermediate": 10.50213912184702,
+  "val_objective": 8.18495528357074
+ }
+}

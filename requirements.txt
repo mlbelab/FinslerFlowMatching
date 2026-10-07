@@ -1,0 +1,26 @@
+# The floors are what the code actually needs; `requirements-lock.txt` beside this file
+# is the exact environment every reported number was measured in.  Install this one to
+# run the repository, that one to reproduce a digit.
+torch>=2.0
+numpy>=1.24
+scipy>=1.10
+matplotlib>=3.6
+pandas>=2.0         # the +- tables and the tuning ranks (method/report.py, method/tuning.py)
+pot>=0.9            # entropic OT (Sinkhorn) + exact EMD for the W2 / fate evals
+scikit-learn>=1.3   # KMeans (scripts/core/mfm_metric.py)
+# --- notebooks ---
+jupyter>=1.0        # every notebook; nbconvert is how they are run headless
+# --- single-cell stack: needed only to *build* a cache, never to read one ---
+# load_pancreas / the erythroid loader return from their .npz before touching an h5ad,
+# so the real-data notebooks run with none of this installed.  Only step 0 needs it, and
+# step 0 needs its own environment anyway (see scripts/experiments/erythroid/preprocess.py).
+anndata>=0.10      # h5ad container
+scanpy>=1.10       # HVG selection, neighbours
+scvelo>=0.3        # RNA-velocity (dynamical mode) + latent time
+cellrank>=2.0      # velocity+similarity kernel mixture P, GPCCA fate probabilities
+# --- the reference releases' own training code ---
+# Their *libraries* are vendored (scripts/core/vendor/), so no checkout is needed; this
+# is the one upstream package they import that is on PyPI.  Required by the erythroid
+# `release` block (scripts/experiments/erythroid/reference_train.py); nothing else
+# imports it, and that block falls back to the vendored copy when it is absent.
+torchcfm>=1.0      # OT-CFM matcher + their MLP

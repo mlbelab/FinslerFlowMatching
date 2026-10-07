@@ -1,0 +1,28 @@
+{
+ "key": "sheet",
+ "wave": 1,
+ "index": 93,
+ "arm": "aniso_fixed",
+ "point": {
+  "rho_mult": 10.0,
+  "a_mult": 0.1
+ },
+ "seed": 0,
+ "train_s": 36.3,
+ "scales": {
+  "rho_star": 0.0012680143707205814,
+  "a_bar": 0.7626385214091421,
+  "a_star": 25.256708814188958
+ },
+ "n_train": 1999,
+ "common_W2_endpoint": 0.17412141537151732,
+ "common_W2_intermediate": 0.6858435617386093,
+ "common_objective": 0.42998248855506327,
+ "common_total_s": 29.7,
+ "common_pi_entropy_frac": 0.8815643787384033,
+ "specific_W2_endpoint": 0.1661712159376928,
+ "specific_W2_intermediate": 0.6867938747434489,
+ "specific_objective": 0.42648254534057084,
+ "specific_total_s": 29.9,
+ "specific_pi_entropy_frac": 0.8814653754234314
+}

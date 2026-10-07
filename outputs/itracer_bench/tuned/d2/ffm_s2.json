@@ -1,0 +1,181 @@
+{
+ "arm": "ffm",
+ "arm_diag": {
+  "geometry": {
+   "F_min": 1.9252185033236113e-05,
+   "J_asym_norm_mean": 0.007474914155449146,
+   "J_full_norm_mean": 0.025721079329701323,
+   "J_norm_mean": 0.025721079329701323,
+   "a_bar": 0.013030705968124199,
+   "a_floor": 0.1,
+   "a_n_range": [
+    0.027149936920046483,
+    3.603420627548092
+   ],
+   "a_raw_bar": 0.013030693537935721,
+   "a_raw_max": 0.04762142197365089,
+   "c": 1.0,
+   "c_eff": 0.999999500000375,
+   "drift_mode": "full",
+   "eps_kernel": 0.02236335813319394,
+   "eps_sigma": 0.0012086166320871181,
+   "fw_lambda": 1.3030693537935722e-05,
+   "fw_lambda_over_a": 0.001,
+   "max_beta_norm_Ginv": 0.9999999229860762,
+   "metric_form": "fw_lambda",
+   "mobility_cond": 141.7963013204293,
+   "rho": 0.1,
+   "sigma_eig_range": [
+    0.032812524077427865,
+    18.732324683209736
+   ],
+   "sigma_mode": "full",
+   "sigma_rel_diff_mean": 0.22896050497447595,
+   "sigma_trace_gap": 1.8998756883434693e-16,
+   "sigma_trace_mean": {
+    "full": 1.9999999983452155,
+    "sym": 1.9999999983452155
+   },
+   "use_metric": true,
+   "use_one_form": true,
+   "void_vs_manifold_cost_ratio": 13.723091737363609
+  },
+  "loss_phase1": 10.028060745757925,
+  "loss_phase2": 0.36410960691713,
+  "ot": {
+   "C_median": 7.411093076907689,
+   "C_min": 0.1405553042800016,
+   "n0": 967,
+   "n1": 967,
+   "pi_entropy_frac": 0.8730044702129259
+  }
+ },
+ "benchmark": "itracer_r2",
+ "controls": {
+  "jump_to_target": {
+   "MMD": 0.6457630398516591,
+   "W1": 1.9370619487046734,
+   "W2": 1.978815370136317
+  },
+  "stay_at_source": {
+   "MMD": 0.6698132065960701,
+   "W1": 1.7067905099301457,
+   "W2": 1.7243864381946992
+  }
+ },
+ "device": "Tesla V100-SXM2-32GB",
+ "dim": 2,
+ "dtype": "torch.float64",
+ "endpoint": {
+  "MMD": 0.07446866133013746,
+  "W1": 0.21240411668485,
+  "W2": 0.2472121260566888
+ },
+ "fixed": {
+  "c": 1.0,
+  "drift_mode": "full",
+  "metric_form": "fw_lambda",
+  "sigma_mode": "full"
+ },
+ "floors": {
+  "endpoint": {
+   "MMD": 0.011966459378879968,
+   "W1": 0.10535780374400032,
+   "W2": 0.12966178260107483,
+   "capped": true,
+   "n_draw": 483,
+   "n_ref": 967
+  },
+  "interpolation": {
+   "MMD": 0.007772956442827892,
+   "W1": 0.10410774495095228,
+   "W2": 0.13314851594512384,
+   "capped": true,
+   "n_draw": 433,
+   "n_ref": 867
+  }
+ },
+ "hparams": {
+  "a_floor": 0.1,
+  "batch_size": 256,
+  "blur_frac": 0.1,
+  "c": 1.0,
+  "curly_alpha": 0.01,
+  "curly_coupling_batch": 128,
+  "curly_k": 20,
+  "curly_net": "shared",
+  "curly_sigma": 0.0,
+  "depth": 4,
+  "drift_mode": "full",
+  "eps_kernel_scale": 1.0,
+  "fw_lambda": 1.3030693537935722e-05,
+  "grad_clip": 5.0,
+  "land_alpha": 1.0,
+  "land_gamma": 0.2,
+  "land_kind": "auto",
+  "land_rho": 0.001,
+  "lr": 0.002,
+  "metric_form": "fw_lambda",
+  "noise_off_after": 1.0,
+  "ot_K": 8,
+  "ot_max_pts": 4096,
+  "phase1_iters": 2500,
+  "phase2_iters": 1500,
+  "rho": 0.1,
+  "sbm_iters": 1500,
+  "sigma": 0.15,
+  "sigma_mode": "full",
+  "target_trace": 2.0,
+  "width": 64
+ },
+ "interpolation": {
+  "MMD": 0.5534427144235496,
+  "W1": 1.1821546628917716,
+  "W2": 1.2336094643161883
+ },
+ "model": "ffm",
+ "p_variant": "lineage_kernel",
+ "point": "tuned",
+ "scales": {
+  "a_raw_bar": 0.013030693537935721,
+  "a_raw_max": 0.04762142197365089,
+  "eps_kernel": 0.02236335813319394,
+  "m_bar": 1.081895378392141,
+  "resolved_fw_lambda": 1.3030693537935722e-05,
+  "rho_star": 0.9999999991726077
+ },
+ "seed": 2,
+ "smoke": false,
+ "task": {
+  "n_scored": 867,
+  "n_selection": 100,
+  "n_src": 967,
+  "n_steps": 300,
+  "n_tgt": 967,
+  "n_withheld": 967,
+  "t_mid": 0.5
+ },
+ "train_seconds": 42.16061615943909,
+ "ts_diag": {
+  "K_lineage_mean_on_edges": 5.508564064663859,
+  "K_velocity_mean_on_edges": 1.0,
+  "P_nnz_per_row": 15.0,
+  "beta": 3.0,
+  "direct_p0_p1_edges": 0,
+  "direct_p0_p1_possible": 935089,
+  "k_sigma": 7,
+  "k_support": 15,
+  "n_p0": 967,
+  "n_p1": 967,
+  "n_train": 1934,
+  "n_withheld": 967,
+  "nu": 0.0,
+  "support_density": 0.0077559462254395035,
+  "velocity_align_on_edges": null
+ },
+ "tuned": {
+  "lam_mult": 0.001,
+  "rho_mult": 0.1
+ },
+ "tuned_from_dim": 2
+}

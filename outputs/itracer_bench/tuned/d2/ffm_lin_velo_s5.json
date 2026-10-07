@@ -1,0 +1,181 @@
+{
+ "arm": "ffm_lin_velo",
+ "arm_diag": {
+  "geometry": {
+   "F_min": 0.00012124372070909661,
+   "J_asym_norm_mean": 0.007570516653570713,
+   "J_full_norm_mean": 0.025725357321846692,
+   "J_norm_mean": 0.025725357321846692,
+   "a_bar": 0.013505431378429992,
+   "a_floor": 0.1,
+   "a_n_range": [
+    0.012868199799606362,
+    3.4981599782222568
+   ],
+   "a_raw_bar": 0.01350543025160422,
+   "a_raw_max": 0.04801588667746435,
+   "c": 1.0,
+   "c_eff": 0.999999955000003,
+   "drift_mode": "full",
+   "eps_kernel": 0.02236335813319394,
+   "eps_sigma": 0.0012082859481409227,
+   "fw_lambda": 4.0516290754812655e-06,
+   "fw_lambda_over_a": 0.0003,
+   "max_beta_norm_Ginv": 0.9999999926453313,
+   "metric_form": "fw_lambda",
+   "mobility_cond": 288.6394951925816,
+   "rho": 0.03,
+   "sigma_eig_range": [
+    0.03301334825369072,
+    18.158141030339632
+   ],
+   "sigma_mode": "full",
+   "sigma_rel_diff_mean": 0.2296979504793116,
+   "sigma_trace_gap": 1.9003956467120897e-16,
+   "sigma_trace_mean": {
+    "full": 1.9999999983447627,
+    "sym": 1.9999999983447632
+   },
+   "use_metric": true,
+   "use_one_form": true,
+   "void_vs_manifold_cost_ratio": 24.622578412465007
+  },
+  "loss_phase1": 13.995464735309056,
+  "loss_phase2": 0.3581941745519965,
+  "ot": {
+   "C_median": 11.338304449211764,
+   "C_min": 0.015037450565197511,
+   "n0": 967,
+   "n1": 967,
+   "pi_entropy_frac": 0.8465917306867875
+  }
+ },
+ "benchmark": "itracer_r2",
+ "controls": {
+  "jump_to_target": {
+   "MMD": 0.6457630398516591,
+   "W1": 1.8449343655480057,
+   "W2": 1.8975997986079267
+  },
+  "stay_at_source": {
+   "MMD": 0.6698132065960701,
+   "W1": 1.7122621840616976,
+   "W2": 1.7327334766084213
+  }
+ },
+ "device": "Tesla V100-SXM2-32GB",
+ "dim": 2,
+ "dtype": "torch.float64",
+ "endpoint": {
+  "MMD": 0.04574160471397544,
+  "W1": 0.13416583857192718,
+  "W2": 0.16050602958491225
+ },
+ "fixed": {
+  "c": 1.0,
+  "drift_mode": "full",
+  "metric_form": "fw_lambda",
+  "sigma_mode": "full"
+ },
+ "floors": {
+  "endpoint": {
+   "MMD": 0.011966459378879968,
+   "W1": 0.10535780374400032,
+   "W2": 0.12966178260107483,
+   "capped": true,
+   "n_draw": 483,
+   "n_ref": 967
+  },
+  "interpolation": {
+   "MMD": 0.007772956442827892,
+   "W1": 0.10410774495095228,
+   "W2": 0.13314851594512384,
+   "capped": true,
+   "n_draw": 433,
+   "n_ref": 867
+  }
+ },
+ "hparams": {
+  "a_floor": 0.1,
+  "batch_size": 256,
+  "blur_frac": 0.1,
+  "c": 1.0,
+  "curly_alpha": 0.01,
+  "curly_coupling_batch": 128,
+  "curly_k": 20,
+  "curly_net": "shared",
+  "curly_sigma": 0.0,
+  "depth": 4,
+  "drift_mode": "full",
+  "eps_kernel_scale": 1.0,
+  "fw_lambda": 4.0516290754812655e-06,
+  "grad_clip": 5.0,
+  "land_alpha": 1.0,
+  "land_gamma": 0.2,
+  "land_kind": "auto",
+  "land_rho": 0.001,
+  "lr": 0.002,
+  "metric_form": "fw_lambda",
+  "noise_off_after": 1.0,
+  "ot_K": 8,
+  "ot_max_pts": 4096,
+  "phase1_iters": 2500,
+  "phase2_iters": 1500,
+  "rho": 0.03,
+  "sbm_iters": 1500,
+  "sigma": 0.15,
+  "sigma_mode": "full",
+  "target_trace": 2.0,
+  "width": 64
+ },
+ "interpolation": {
+  "MMD": 0.5150859849413564,
+  "W1": 1.202387211314093,
+  "W2": 1.234907571003276
+ },
+ "model": "ffm",
+ "p_variant": "lineage_velocity",
+ "point": "tuned",
+ "scales": {
+  "a_raw_bar": 0.01350543025160422,
+  "a_raw_max": 0.04801588667746435,
+  "eps_kernel": 0.02236335813319394,
+  "m_bar": 1.0118062385659217,
+  "resolved_fw_lambda": 4.0516290754812655e-06,
+  "rho_star": 0.9999999991723814
+ },
+ "seed": 5,
+ "smoke": false,
+ "task": {
+  "n_scored": 867,
+  "n_selection": 100,
+  "n_src": 967,
+  "n_steps": 300,
+  "n_tgt": 967,
+  "n_withheld": 967,
+  "t_mid": 0.5
+ },
+ "train_seconds": 38.50222945213318,
+ "ts_diag": {
+  "K_lineage_mean_on_edges": 5.508564064663859,
+  "K_velocity_mean_on_edges": 1.0849898867802015,
+  "P_nnz_per_row": 15.0,
+  "beta": 3.0,
+  "direct_p0_p1_edges": 0,
+  "direct_p0_p1_possible": 935089,
+  "k_sigma": 7,
+  "k_support": 15,
+  "n_p0": 967,
+  "n_p1": 967,
+  "n_train": 1934,
+  "n_withheld": 967,
+  "nu": 3.0,
+  "support_density": 0.0077559462254395035,
+  "velocity_align_on_edges": 0.026064519374163375
+ },
+ "tuned": {
+  "lam_mult": 0.0003,
+  "rho_mult": 0.03
+ },
+ "tuned_from_dim": 2
+}

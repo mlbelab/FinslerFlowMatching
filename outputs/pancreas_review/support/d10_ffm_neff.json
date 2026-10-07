@@ -1,0 +1,31 @@
+{
+ "adm_max": 0.9754148125648499,
+ "adm_mean": 0.9599090369974638,
+ "arm": "ffm_neff",
+ "budget": {
+  "n_chord": 4096,
+  "n_dirs": 32,
+  "neff": "shifted",
+  "seed": 0
+ },
+ "cost_test": 0.6426933800706452,
+ "cost_void_chord": NaN,
+ "dim": 10,
+ "eps_kernel": 1.43752121925354,
+ "lam": 0.18589032532332778,
+ "neff_chord": 100.0,
+ "neff_data": 100.0,
+ "neff_test": 99.99999237060547,
+ "point": {
+  "ffm": {
+   "lam_mult": 0.3,
+   "rho_mult": 0.003
+  },
+  "neff": {
+   "n_eff": 100.0
+  }
+ },
+ "rho": 0.0015020691159296146,
+ "void_chord": 0.0,
+ "void_test": 0.11600719424460432
+}

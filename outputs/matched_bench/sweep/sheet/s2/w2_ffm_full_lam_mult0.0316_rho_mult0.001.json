@@ -1,0 +1,29 @@
+{
+ "key": "sheet",
+ "wave": 2,
+ "index": 1,
+ "arm": "ffm_full",
+ "point": {
+  "rho_mult": 0.001,
+  "lam_mult": 0.0316
+ },
+ "tag": "w2_ffm_full_lam_mult0.0316_rho_mult0.001",
+ "seed": 2,
+ "train_s": 32.7,
+ "scales": {
+  "rho_star": 0.0012680143707205814,
+  "a_bar": 0.7626385214091421,
+  "a_star": 25.256708814188958
+ },
+ "n_train": 1999,
+ "common_W2_endpoint": 0.197121310097766,
+ "common_W2_intermediate": 0.1373597682210822,
+ "common_objective": 0.1672405391594241,
+ "common_total_s": 27.2,
+ "common_pi_entropy_frac": 0.8852519392967224,
+ "specific_W2_endpoint": 0.4217619003443254,
+ "specific_W2_intermediate": 0.11958396284960977,
+ "specific_objective": 0.2706729315969676,
+ "specific_total_s": 27.0,
+ "specific_pi_entropy_frac": 0.8532616496086121
+}

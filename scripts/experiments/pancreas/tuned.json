@@ -1,0 +1,66 @@
+{
+  "2": {
+    "ffm": {
+      "rho_mult": 0.1,
+      "lam_mult": 0.1
+    },
+    "mfm_land": {
+      "land_rho": 0.000316
+    },
+    "curly": {
+      "curly_alpha": 0.1
+    },
+    "cfm": {},
+    "pathb": {
+      "width_mult": 1.0
+    }
+  },
+  "10": {
+    "ffm": {
+      "rho_mult": 0.003,
+      "lam_mult": 0.3
+    },
+    "mfm_land": {
+      "land_rho": 0.00316
+    },
+    "curly": {
+      "curly_alpha": 0.1
+    },
+    "cfm": {},
+    "pathb": {
+      "width_mult": 1.0
+    }
+  },
+  "20": {
+    "ffm": {
+      "rho_mult": 0.001,
+      "lam_mult": 1.0
+    },
+    "mfm_land": {
+      "land_rho": 0.00316
+    },
+    "curly": {
+      "curly_alpha": 1.0
+    },
+    "cfm": {},
+    "pathb": {
+      "width_mult": 0.1
+    }
+  },
+  "50": {
+    "ffm": {
+      "rho_mult": 0.001,
+      "lam_mult": 0.01
+    },
+    "mfm_land": {
+      "land_rho": 0.0001
+    },
+    "curly": {
+      "curly_alpha": 1.0
+    },
+    "cfm": {},
+    "pathb": {
+      "width_mult": 0.01
+    }
+  }
+}

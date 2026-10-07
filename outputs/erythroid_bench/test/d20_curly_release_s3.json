@@ -1,0 +1,92 @@
+{
+  "dim": 20,
+  "arm": "curly_release",
+  "seed": 3,
+  "stage": "test",
+  "block": "release",
+  "budget": "release-verbatim",
+  "override": {},
+  "inherited": null,
+  "hparams": {
+    "notebook": "nd_mouse_erythroid.ipynb",
+    "cfm_width": 128,
+    "cfm_iters": 3000,
+    "geo_width": 256,
+    "geo_iters": 3000,
+    "vel_width": 256,
+    "vel_iters": 3000,
+    "batch_size": 256,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "geo_alpha": 0.1,
+    "vel_alpha": 1.0,
+    "cosine_weight": 0.0,
+    "hinge_value": 0.1,
+    "k": 30,
+    "velocity_scale": 1.0
+  },
+  "scales": {},
+  "metrics": {
+    "cos_dist": 0.4895475003123282,
+    "l2": 1607.2760464477558,
+    "w2": 6.155295563807376,
+    "w2_true": 6.326093300675579,
+    "u_norm_mean": 7.9267955477535725,
+    "u_snr": 0.983963668346405,
+    "velocity_scale": 1.0,
+    "ref_noise_weight_mean": 1.0,
+    "ref_noise_weight_saturated_frac": 1.0,
+    "ref_nn_dist_median": 5.074856758117676,
+    "ref_signal_weight_mean": 0.0,
+    "scored_field": "v_theta",
+    "n_target_cells": 2941
+  },
+  "ts_diag": {
+    "n_train": 6544,
+    "n_p0": 3272,
+    "n_p1": 3272,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.7100891723957036,
+    "cos_J_velocity": 0.265189952991458
+  },
+  "arm_diag": {
+    "geo_iters": 3000,
+    "vel_iters": 3000,
+    "geo_width": 256,
+    "vel_width": 256,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "alpha": 0.1,
+    "cosine_weight": 0.0,
+    "batch_size": 256,
+    "k": 30,
+    "velocity_scale": 1.0,
+    "loss_geo_tail": 22.682107162475585,
+    "loss_vel_tail": 1.0946443319320678,
+    "coupling": "coupling_geo_new (drift-discrepancy, exact assignment)",
+    "notebook": "nd_mouse_erythroid.ipynb",
+    "provenance": "release code, our UniTVelo cache",
+    "reads_P": false,
+    "reads_geometry": false,
+    "n_source": 3272
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 807.5948125813487
+  },
+  "train_seconds": 342.5500235557556,
+  "n_steps": 300,
+  "smoke": false
+}

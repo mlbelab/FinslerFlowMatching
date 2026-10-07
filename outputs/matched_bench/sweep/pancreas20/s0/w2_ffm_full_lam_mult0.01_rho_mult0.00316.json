@@ -1,0 +1,28 @@
+{
+ "key": "pancreas20",
+ "wave": 2,
+ "index": 7,
+ "arm": "ffm_full",
+ "point": {
+  "rho_mult": 0.00316,
+  "lam_mult": 0.01
+ },
+ "seed": 0,
+ "train_s": 135.3,
+ "scales": {
+  "rho_star": 0.722610099633495,
+  "a_bar": 0.3393352348232907,
+  "a_star": 38.5465158135725
+ },
+ "n_train": 2094,
+ "common_W2_endpoint": 5.54861779603288,
+ "common_W2_intermediate": 11.533389066686254,
+ "common_objective": 8.541003431359567,
+ "common_total_s": 117.6,
+ "common_pi_entropy_frac": 0.9972823262214661,
+ "specific_W2_endpoint": 5.9302505029469845,
+ "specific_W2_intermediate": 11.267529612197029,
+ "specific_objective": 8.598890057572007,
+ "specific_total_s": 118.5,
+ "specific_pi_entropy_frac": 0.9965453743934631
+}

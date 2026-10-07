@@ -1,0 +1,104 @@
+{
+  "dim": 2,
+  "arm": "curly",
+  "seed": 0,
+  "stage": "test",
+  "block": "harness",
+  "budget": "release-matched",
+  "override": {
+    "curly_alpha": 0.1
+  },
+  "inherited": null,
+  "hparams": {
+    "rho": 0.03,
+    "c": 0.9,
+    "target_trace": 2.0,
+    "metric_form": "randers",
+    "drift_mode": "asym",
+    "sigma_mode": "sym",
+    "a_floor": 0.1,
+    "fw_lambda": 0.03,
+    "eps_kernel_scale": 1.0,
+    "land_gamma": 0.2,
+    "land_rho": 0.001,
+    "land_alpha": 1.0,
+    "land_kind": "auto",
+    "ot_K": 8,
+    "ot_max_pts": 600,
+    "blur_frac": 0.1,
+    "lr": 0.0001,
+    "width": 64,
+    "depth": 3,
+    "batch_size": 256,
+    "phase1_iters": 2000,
+    "phase2_iters": 3000,
+    "grad_clip": 5.0,
+    "curly_alpha": 0.1,
+    "curly_sigma": 0.01,
+    "curly_k": 30,
+    "curly_coupling_batch": 128,
+    "curly_net": "release",
+    "sigma": 0.15,
+    "sbm_iters": 3000,
+    "noise_off_after": 1.0
+  },
+  "scales": {},
+  "metrics": {
+    "cos_dist": 0.009154025356595714,
+    "l2": 2.0132073601086944,
+    "w2": 0.12408947338586147,
+    "w2_true": 0.16267546993149493,
+    "u_norm_mean": 1.728293297290802,
+    "u_snr": 125.50759887695312,
+    "velocity_scale": 100.0,
+    "ref_noise_weight_mean": 0.5131370425224304,
+    "ref_noise_weight_saturated_frac": 0.01650366745889187,
+    "ref_nn_dist_median": 0.011099675670266151,
+    "ref_signal_weight_mean": 0.4868629574775696,
+    "scored_field": "v_theta",
+    "n_target_cells": 2941
+  },
+  "ts_diag": {
+    "n_train": 6544,
+    "n_p0": 3272,
+    "n_p1": 3272,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.9819694987023763,
+    "cos_J_velocity": 0.9746945099967237
+  },
+  "arm_diag": {
+    "curly": {
+      "geo_iters": 2000,
+      "vel_iters": 3000,
+      "loss_geo": 0.06801888074725866,
+      "loss_vel": 0.11475540343672037,
+      "alpha": 0.1,
+      "sigma": 0.01,
+      "k": 30,
+      "net": "release",
+      "n_ref": 6544
+    },
+    "loss_phase1": 0.06801888074725866,
+    "loss_phase2": 0.11475540343672037,
+    "velocity_source": "measured"
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 0.036388570470936306
+  },
+  "train_seconds": 57.2105815410614,
+  "n_steps": 300,
+  "smoke": false
+}

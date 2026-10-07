@@ -1,0 +1,62 @@
+{
+ "2": {
+  "cfm": {
+   "blur_frac": 30.0
+  },
+  "mfm_land": {
+   "land_gamma": 0.04
+  },
+  "curly": {
+   "curly_alpha": 0.1
+  },
+  "ffm": {
+   "rho_mult": 0.0003,
+   "lam_mult": 10.0
+  },
+  "pathb": {
+   "width_mult": 0.003
+  },
+  "cfm_release": {},
+  "curly_release": {}
+ },
+ "20": {
+  "cfm": {
+   "blur_frac": 10.0
+  },
+  "mfm_land": {
+   "land_rho": 0.3
+  },
+  "curly": {
+   "curly_alpha": 10000.0
+  },
+  "ffm": {
+   "rho_mult": 0.0003,
+   "lam_mult": 30.0
+  },
+  "pathb": {
+   "width_mult": 0.1
+  },
+  "cfm_release": {},
+  "curly_release": {}
+ },
+ "50": {
+  "cfm": {
+   "blur_frac": 0.01
+  },
+  "mfm_land": {
+   "land_rho": 0.01
+  },
+  "curly": {
+   "curly_alpha": 10000.0
+  },
+  "ffm": {
+   "rho_mult": 0.001,
+   "lam_mult": 10.0
+  },
+  "pathb": {
+   "width_mult": 0.1
+  },
+  "cfm_release": {},
+  "curly_release": {}
+ }
+}

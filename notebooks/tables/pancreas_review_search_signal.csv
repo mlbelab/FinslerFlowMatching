@@ -1,0 +1,6 @@
+search signal,value
+"corr(objective, reported), cell means",0.014430388908796747
+"Spearman, cell means",0.037271448663853735
+"corr(objective, reported), single seed",0.022072642189603156
+"variance of cell means, reported",0.018161342070184334
+noise variance of a 4-seed mean,0.017175854412902668

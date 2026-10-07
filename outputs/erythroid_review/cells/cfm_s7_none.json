@@ -1,0 +1,24 @@
+{
+ "arm": "cfm",
+ "budget": {
+  "dim": 2,
+  "dtype": "torch.float32",
+  "end_w2": "exact",
+  "n_steps": 300
+ },
+ "cos_dist": 0.14052771468957265,
+ "device": "Tesla V100-SXM2-32GB",
+ "end_w2": 0.1676688439587416,
+ "l2": 2.4711065769195564,
+ "pert": "none",
+ "point": {
+  "blur_frac": 30.0
+ },
+ "scales": {},
+ "scored_field": "v_theta",
+ "seed": 7,
+ "smoke": false,
+ "train_seconds": 5.849967002868652,
+ "w2": 0.6432988523713847,
+ "w2_true": 0.6787153130287996
+}

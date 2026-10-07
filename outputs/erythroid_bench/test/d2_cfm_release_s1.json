@@ -1,0 +1,85 @@
+{
+  "dim": 2,
+  "arm": "cfm_release",
+  "seed": 1,
+  "stage": "test",
+  "block": "release",
+  "budget": "release-verbatim",
+  "override": {},
+  "inherited": null,
+  "hparams": {
+    "notebook": "2d_mouse_erythroid.ipynb",
+    "cfm_width": 64,
+    "cfm_iters": 3000,
+    "geo_width": 64,
+    "geo_iters": 2000,
+    "vel_width": 64,
+    "vel_iters": 3000,
+    "batch_size": 256,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "geo_alpha": 0.1,
+    "vel_alpha": 1.0,
+    "cosine_weight": 50.0,
+    "hinge_value": 0.1,
+    "k": 30,
+    "velocity_scale": 100.0
+  },
+  "scales": {},
+  "metrics": {
+    "cos_dist": 0.14700181389848394,
+    "l2": 2.446836288770041,
+    "w2": 0.6472109331688919,
+    "w2_true": 0.7052426321718294,
+    "u_norm_mean": 1.3154605444272358,
+    "u_snr": 80.46751403808594,
+    "velocity_scale": 100.0,
+    "ref_noise_weight_mean": 0.6978769302368164,
+    "ref_noise_weight_saturated_frac": 0.37652814388275146,
+    "ref_nn_dist_median": 0.06456656754016876,
+    "ref_signal_weight_mean": 0.3021230697631836,
+    "scored_field": "v_theta",
+    "n_target_cells": 2941
+  },
+  "ts_diag": {
+    "n_train": 6544,
+    "n_p0": 3272,
+    "n_p1": 3272,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.9819694987023763,
+    "cos_J_velocity": 0.9746945099967237
+  },
+  "arm_diag": {
+    "iters": 3000,
+    "width": 64,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "batch_size": 256,
+    "loss_tail": 0.0166029030457139,
+    "coupling": "torchcfm ExactOptimalTransportConditionalFlowMatcher",
+    "notebook": "2d_mouse_erythroid.ipynb",
+    "provenance": "release code, our UniTVelo cache",
+    "reads_P": false,
+    "reads_geometry": false,
+    "n_source": 3272
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 0.036388570470936306
+  },
+  "train_seconds": 36.704673528671265,
+  "n_steps": 300,
+  "smoke": false
+}

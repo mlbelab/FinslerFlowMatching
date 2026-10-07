@@ -1,0 +1,181 @@
+{
+ "arm": "ffm_lin_velo",
+ "arm_diag": {
+  "geometry": {
+   "F_min": 27.221545460590917,
+   "J_asym_norm_mean": 3.205432795309083,
+   "J_full_norm_mean": 8.023770895489857,
+   "J_norm_mean": 8.023770895489857,
+   "a_bar": 24.978105629240382,
+   "a_floor": 0.1,
+   "a_n_range": [
+    0.9980994561507937,
+    1.0036269600510173
+   ],
+   "a_raw_bar": 2.485233861171827,
+   "a_raw_max": 3.732010829838207,
+   "c": 1.0,
+   "c_eff": 0.0995037190209989,
+   "drift_mode": "full",
+   "eps_kernel": 9.518724075690397,
+   "eps_sigma": 32.90243442769629,
+   "fw_lambda": 24.852338611718274,
+   "fw_lambda_over_a": 10.0,
+   "max_beta_norm_Ginv": 0.01718700417200718,
+   "metric_form": "fw_lambda",
+   "mobility_cond": 1598.1023132454902,
+   "rho": 0.004,
+   "sigma_eig_range": [
+    -1.2284026296765283e-15,
+    6.388409252979999
+   ],
+   "sigma_mode": "full",
+   "sigma_rel_diff_mean": 0.5592345075197168,
+   "sigma_trace_gap": 0.0,
+   "sigma_trace_mean": {
+    "full": 1.9999999999999394,
+    "sym": 1.9999999999999392
+   },
+   "use_metric": true,
+   "use_one_form": true,
+   "void_vs_manifold_cost_ratio": 39.976271877765186
+  },
+  "loss_phase1": 22089.829250013117,
+  "loss_phase2": 3.556046023582719,
+  "ot": {
+   "C_median": 21905.836084766685,
+   "C_min": 7229.236465089788,
+   "n0": 967,
+   "n1": 967,
+   "pi_entropy_frac": 0.9955258635424976
+  }
+ },
+ "benchmark": "itracer_r2",
+ "controls": {
+  "jump_to_target": {
+   "MMD": 0.36551803596421145,
+   "W1": 20.8909798810289,
+   "W2": 21.727496813973058
+  },
+  "stay_at_source": {
+   "MMD": 0.47627645092867926,
+   "W1": 27.231217927183344,
+   "W2": 27.766306135323738
+  }
+ },
+ "device": "Tesla V100-SXM2-32GB",
+ "dim": 50,
+ "dtype": "torch.float64",
+ "endpoint": {
+  "MMD": 0.06506552971384505,
+  "W1": 11.328873298168384,
+  "W2": 11.490552845831841
+ },
+ "fixed": {
+  "c": 1.0,
+  "drift_mode": "full",
+  "metric_form": "fw_lambda",
+  "sigma_mode": "full"
+ },
+ "floors": {
+  "endpoint": {
+   "MMD": 0.004221201293864383,
+   "W1": 9.98801458233697,
+   "W2": 10.119592006744181,
+   "capped": true,
+   "n_draw": 483,
+   "n_ref": 967
+  },
+  "interpolation": {
+   "MMD": 0.0059070393183701456,
+   "W1": 11.157315539850625,
+   "W2": 11.451842542961339,
+   "capped": true,
+   "n_draw": 433,
+   "n_ref": 867
+  }
+ },
+ "hparams": {
+  "a_floor": 0.1,
+  "batch_size": 256,
+  "blur_frac": 0.1,
+  "c": 1.0,
+  "curly_alpha": 0.01,
+  "curly_coupling_batch": 128,
+  "curly_k": 20,
+  "curly_net": "shared",
+  "curly_sigma": 0.0,
+  "depth": 4,
+  "drift_mode": "full",
+  "eps_kernel_scale": 1.0,
+  "fw_lambda": 24.852338611718274,
+  "grad_clip": 5.0,
+  "land_alpha": 1.0,
+  "land_gamma": 0.2,
+  "land_kind": "auto",
+  "land_rho": 0.001,
+  "lr": 0.002,
+  "metric_form": "fw_lambda",
+  "noise_off_after": 1.0,
+  "ot_K": 8,
+  "ot_max_pts": 4096,
+  "phase1_iters": 2500,
+  "phase2_iters": 1500,
+  "rho": 0.004,
+  "sbm_iters": 1500,
+  "sigma": 0.15,
+  "sigma_mode": "full",
+  "target_trace": 2.0,
+  "width": 64
+ },
+ "interpolation": {
+  "MMD": 0.31352154707625407,
+  "W1": 16.75478876431999,
+  "W2": 16.976154545043258
+ },
+ "model": "ffm",
+ "p_variant": "lineage_velocity",
+ "point": "tuned",
+ "scales": {
+  "a_raw_bar": 2.485233861171827,
+  "a_raw_max": 3.732010829838207,
+  "eps_kernel": 9.518724075690397,
+  "m_bar": 0.04197457474673014,
+  "resolved_fw_lambda": 24.852338611718274,
+  "rho_star": 0.039999999999998787
+ },
+ "seed": 0,
+ "smoke": false,
+ "task": {
+  "n_scored": 867,
+  "n_selection": 100,
+  "n_src": 967,
+  "n_steps": 300,
+  "n_tgt": 967,
+  "n_withheld": 967,
+  "t_mid": 0.5
+ },
+ "train_seconds": 337.7619526386261,
+ "ts_diag": {
+  "K_lineage_mean_on_edges": 5.8736532395045264,
+  "K_velocity_mean_on_edges": 1.086147753758301,
+  "P_nnz_per_row": 15.0,
+  "beta": 3.0,
+  "direct_p0_p1_edges": 0,
+  "direct_p0_p1_possible": 935089,
+  "k_sigma": 7,
+  "k_support": 15,
+  "n_p0": 967,
+  "n_p1": 967,
+  "n_train": 1934,
+  "n_withheld": 967,
+  "nu": 3.0,
+  "support_density": 0.0077559462254395035,
+  "velocity_align_on_edges": 0.026280395118377414
+ },
+ "tuned": {
+  "lam_mult": 10.0,
+  "rho_mult": 0.1
+ },
+ "tuned_from_dim": 50
+}

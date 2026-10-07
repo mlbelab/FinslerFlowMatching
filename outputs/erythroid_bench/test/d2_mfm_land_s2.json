@@ -1,0 +1,99 @@
+{
+  "dim": 2,
+  "arm": "mfm_land",
+  "seed": 2,
+  "stage": "test",
+  "block": "harness",
+  "budget": "release-matched",
+  "override": {
+    "land_gamma": 0.04
+  },
+  "inherited": null,
+  "hparams": {
+    "rho": 0.03,
+    "c": 0.9,
+    "target_trace": 2.0,
+    "metric_form": "randers",
+    "drift_mode": "asym",
+    "sigma_mode": "sym",
+    "a_floor": 0.1,
+    "fw_lambda": 0.03,
+    "eps_kernel_scale": 1.0,
+    "land_gamma": 0.04,
+    "land_rho": 0.001,
+    "land_alpha": 1.0,
+    "land_kind": "auto",
+    "ot_K": 8,
+    "ot_max_pts": 600,
+    "blur_frac": 0.1,
+    "lr": 0.0001,
+    "width": 64,
+    "depth": 3,
+    "batch_size": 256,
+    "phase1_iters": 2000,
+    "phase2_iters": 3000,
+    "grad_clip": 5.0,
+    "curly_alpha": 0.01,
+    "curly_sigma": 0.01,
+    "curly_k": 30,
+    "curly_coupling_batch": 128,
+    "curly_net": "release",
+    "sigma": 0.15,
+    "sbm_iters": 3000,
+    "noise_off_after": 1.0
+  },
+  "scales": {},
+  "metrics": {
+    "cos_dist": 0.009580721030943089,
+    "l2": 1.8585865942637125,
+    "w2": 0.27495363972387404,
+    "w2_true": 0.2901012429751487,
+    "u_norm_mean": 1.7229402271906535,
+    "u_snr": 126.82568359375,
+    "velocity_scale": 100.0,
+    "ref_noise_weight_mean": 0.5095614790916443,
+    "ref_noise_weight_saturated_frac": 0.009168704971671104,
+    "ref_nn_dist_median": 0.011990884318947792,
+    "ref_signal_weight_mean": 0.4904385209083557,
+    "scored_field": "v_theta",
+    "n_target_cells": 2941
+  },
+  "ts_diag": {
+    "n_train": 6544,
+    "n_p0": 3272,
+    "n_p1": 3272,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.9819694987023763,
+    "cos_J_velocity": 0.9746945099967237
+  },
+  "arm_diag": {
+    "ot": {
+      "n0": 600,
+      "n1": 600,
+      "C_median": 2694.985595703125,
+      "C_min": 586.9545288085938,
+      "pi_entropy_frac": 0.9641007203587252
+    },
+    "loss_phase1": 3101.9329028320312,
+    "loss_phase2": 0.5026923862099647
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 0.036388570470936306
+  },
+  "train_seconds": 26.6413631439209,
+  "n_steps": 300,
+  "smoke": false
+}

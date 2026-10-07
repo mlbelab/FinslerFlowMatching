@@ -1,0 +1,86 @@
+{
+ "sheet": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.000562
+   },
+   "graph_drift": {
+    "a_mult": 1.0
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.0178
+   },
+   "graph_drift": {
+    "a_mult": 1.78
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  }
+ },
+ "pancreas20": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.00316,
+    "lam_mult": 1.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.00316,
+    "a_mult": 0.0316
+   },
+   "ffm_second": {
+    "rho_mult": 0.178
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 0.00316,
+    "lam_mult": 1.0
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.00316,
+    "lam_mult": 1.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.1,
+    "a_mult": 0.1
+   },
+   "ffm_second": {
+    "rho_mult": 0.178
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 0.00316,
+    "lam_mult": 1.0
+   }
+  }
+ }
+}

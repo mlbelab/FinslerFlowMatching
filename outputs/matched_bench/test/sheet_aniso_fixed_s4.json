@@ -1,0 +1,59 @@
+{
+ "arm": "aniso_fixed",
+ "common": {
+  "W2_end": 0.2225115494252714,
+  "W2_mid": 0.12765751860133598,
+  "W2_window": 0.10906302563388498,
+  "pi_entropy_frac": 0.8823667168617249,
+  "t_ot": 0.2,
+  "t_phase1": 25.8,
+  "t_phase3": 6.5,
+  "total_s": 32.5,
+  "val_W2_endpoint": 0.25906024387628446,
+  "val_W2_intermediate": 0.1071102836867934,
+  "val_objective": 0.18308526378153894
+ },
+ "diag": {
+  "d": 3,
+  "n_end_ref": 222,
+  "n_mid_ref": 112,
+  "n_p0": 966,
+  "n_p1": 1033,
+  "n_train": 1999
+ },
+ "floors": {
+  "W2_end": 0.1759854502690223,
+  "W2_mid": 0.06552907853902987
+ },
+ "key": "sheet",
+ "points": {
+  "common": {
+   "a_mult": 3.16,
+   "rho_mult": 0.001
+  },
+  "specific": {
+   "a_mult": 3.16,
+   "rho_mult": 0.001
+  }
+ },
+ "scales": {
+  "a_bar": 0.7626385214091421,
+  "a_star": 25.256708814188958,
+  "rho_star": 0.0012680143707205823
+ },
+ "seed": 4,
+ "smoke": false,
+ "specific": {
+  "W2_end": 0.2307158656012304,
+  "W2_mid": 0.11945420941923048,
+  "W2_window": 0.1036760619767595,
+  "pi_entropy_frac": 0.9386548399925232,
+  "t_ot": 0.3,
+  "t_phase1": 25.8,
+  "t_phase3": 6.6,
+  "total_s": 32.7,
+  "val_W2_endpoint": 0.30724993084045626,
+  "val_W2_intermediate": 0.10200326439022887,
+  "val_objective": 0.20462659761534258
+ }
+}

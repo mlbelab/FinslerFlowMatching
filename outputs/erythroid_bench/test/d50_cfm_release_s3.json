@@ -1,0 +1,85 @@
+{
+  "dim": 50,
+  "arm": "cfm_release",
+  "seed": 3,
+  "stage": "test",
+  "block": "release",
+  "budget": "release-verbatim",
+  "override": {},
+  "inherited": null,
+  "hparams": {
+    "notebook": "nd_mouse_erythroid.ipynb",
+    "cfm_width": 128,
+    "cfm_iters": 3000,
+    "geo_width": 256,
+    "geo_iters": 3000,
+    "vel_width": 256,
+    "vel_iters": 3000,
+    "batch_size": 256,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "geo_alpha": 0.1,
+    "vel_alpha": 1.0,
+    "cosine_weight": 0.0,
+    "hinge_value": 0.1,
+    "k": 30,
+    "velocity_scale": 1.0
+  },
+  "scales": {},
+  "metrics": {
+    "cos_dist": 0.4904698246717452,
+    "l2": 2079.005224100749,
+    "w2": 7.87232622861877,
+    "w2_true": 8.013800666257136,
+    "u_norm_mean": 9.497199494938055,
+    "u_snr": 0.9932016134262085,
+    "velocity_scale": 1.0,
+    "ref_noise_weight_mean": 1.0,
+    "ref_noise_weight_saturated_frac": 1.0,
+    "ref_nn_dist_median": 7.06830358505249,
+    "ref_signal_weight_mean": 0.0,
+    "scored_field": "v_theta",
+    "n_target_cells": 2941
+  },
+  "ts_diag": {
+    "n_train": 6544,
+    "n_p0": 3272,
+    "n_p1": 3272,
+    "P_k": 15,
+    "P_softmax_scale": 4.0,
+    "P_asymmetry": 0.6932615218641442,
+    "cos_J_velocity": 0.1165657549050351
+  },
+  "arm_diag": {
+    "iters": 3000,
+    "width": 128,
+    "lr": 0.0001,
+    "sigma": 0.01,
+    "batch_size": 256,
+    "loss_tail": 0.9595269799232483,
+    "coupling": "torchcfm ExactOptimalTransportConditionalFlowMatcher",
+    "notebook": "nd_mouse_erythroid.ipynb",
+    "provenance": "release code, our UniTVelo cache",
+    "reads_P": false,
+    "reads_geometry": false,
+    "n_source": 3272
+  },
+  "cloud_diag": {
+    "n_cells": 9815,
+    "bin_counts": [
+      3272,
+      3271,
+      3272
+    ],
+    "quantile_edges": [
+      0.0,
+      0.4219212929407755,
+      0.7517739534378051,
+      1.0
+    ],
+    "velocity_norm_median": 885.9145577873842
+  },
+  "train_seconds": 39.557472229003906,
+  "n_steps": 300,
+  "smoke": false
+}

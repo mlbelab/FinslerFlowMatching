@@ -1,0 +1,32 @@
+{
+ "arm": "ffm",
+ "budget": {
+  "dim": 2,
+  "dtype": "torch.float32",
+  "end_w2": "exact",
+  "n_steps": 300
+ },
+ "cos_dist": 0.020099714342504738,
+ "device": "Tesla V100-SXM2-32GB",
+ "end_w2": 0.22767116379676097,
+ "l2": 1.8716644104321791,
+ "pert": "none",
+ "point": {
+  "lam_mult": 10.0,
+  "rho_mult": 0.0003
+ },
+ "scales": {
+  "a_raw_bar": 0.023940298259986934,
+  "a_raw_max": 0.026155121624469757,
+  "eps_kernel": 0.009630411863327026,
+  "m_bar": 0.9913639171199286,
+  "resolved_fw_lambda": 0.23940298259986934,
+  "rho_star": 1.0
+ },
+ "scored_field": "v_theta",
+ "seed": 4,
+ "smoke": false,
+ "train_seconds": 33.353434562683105,
+ "w2": 0.19551163139099853,
+ "w2_true": 0.24544548164164534
+}

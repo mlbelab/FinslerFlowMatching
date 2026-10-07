@@ -1,0 +1,74 @@
+{
+ "2": {
+  "cfm": {
+   "blur_frac": 0.0003
+  },
+  "mfm_land": {
+   "land_gamma": 0.0125
+  },
+  "ffm_expr": {
+   "rho_mult": 0.03,
+   "lam_mult": 0.0001
+  },
+  "ffm_velo": {
+   "rho_mult": 0.0001,
+   "lam_mult": 0.0003
+  },
+  "ffm": {
+   "rho_mult": 0.1,
+   "lam_mult": 0.001
+  },
+  "ffm_lin_velo": {
+   "rho_mult": 0.03,
+   "lam_mult": 0.0003
+  }
+ },
+ "20": {
+  "cfm": {
+   "blur_frac": 0.001
+  },
+  "mfm_land": {
+   "land_rho": 0.3
+  },
+  "ffm_expr": {
+   "rho_mult": 0.001,
+   "lam_mult": 10.0
+  },
+  "ffm_velo": {
+   "rho_mult": 3e-05,
+   "lam_mult": 30.0
+  },
+  "ffm": {
+   "rho_mult": 0.01,
+   "lam_mult": 30.0
+  },
+  "ffm_lin_velo": {
+   "rho_mult": 0.0003,
+   "lam_mult": 30.0
+  }
+ },
+ "50": {
+  "cfm": {
+   "blur_frac": 0.01
+  },
+  "mfm_land": {
+   "land_rho": 0.01
+  },
+  "ffm_expr": {
+   "rho_mult": 3e-05,
+   "lam_mult": 30.0
+  },
+  "ffm_velo": {
+   "rho_mult": 0.0001,
+   "lam_mult": 30.0
+  },
+  "ffm": {
+   "rho_mult": 0.03,
+   "lam_mult": 30.0
+  },
+  "ffm_lin_velo": {
+   "rho_mult": 0.1,
+   "lam_mult": 10.0
+  }
+ }
+}
