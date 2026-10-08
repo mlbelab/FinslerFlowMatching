@@ -1,5 +1,6 @@
 # Finsler Flow Matching
-Training is three phases:
+
+This is the code for the paper Finsler Flow Matching: Dynamics-Aware Geodesic Interpolation for Single-Snapshot Trajectory Inference.
 
 1. **Geodesic interpolant** — fit `φ` by minimising `E F(x_t, ẋ_t)²`.
 2. **Finsler-cost OT** — score each `(x₀, x₁)` pair by the mean Finsler energy along the
@@ -13,43 +14,20 @@ pip install -r requirements.txt
 jupyter lab notebooks/
 ```
 
-Headless:
-
-```bash
-jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=7200 \
-  --inplace notebooks/sheet_ffm_paper.ipynb
-```
-
-A fast wiring check — one seed, short budgets, artefacts written to separate `*_smoke/`
-trees so nothing reported is overwritten:
-
-```bash
-NB_SMOKE=1 jupyter nbconvert --to notebook --execute --allow-errors \
-  --output-dir=/tmp --output smoke.ipynb notebooks/pancreas_ffm_paper.ipynb
-```
-
-Notebooks find the project root by walking up from their own directory, so they run from
-anywhere inside `FFM/`.
-
 | Variable | Effect |
 |---|---|
 | `NB_SMOKE=1` | one seed, cut budgets, separate output trees |
 | `NB_CPU=1` | force CPU |
-| `NB_DIMS=2,20` | restrict the dimensions swept (pancreas and erythroid; pancreas must include 2) |
-| `NB_SENS_DIM=20` | dimension the erythroid sensitivity table walks |
-| `NB_BAND_DIR=...` | where the pancreas band figure reads its records |
-| `FINSLER_OUT=...` | put run trees somewhere other than `outputs/` |
-| `PANCREAS_CACHE`, `ERYTHROID_CACHE`, `ITRACER_CACHE` | point a cache at your own copy |
 
 
-## The five benchmarks
+## Five benchmarks
 
 | Notebook | Cloud | Task | Train cost |
 |---|---|---|---|
 | `sheet_ffm_paper` | 4 000 points on a saddle in ℝ³ | withheld strip between `p₀` and `p₁` | ~20 GPU-min |
 | `forksheet_ffm_paper` | 3 000 points, bifurcating sheet | withheld stretch where the arms resolve | ~50 GPU-min |
-| `pancreas_ffm_paper` | scVelo endocrinogenesis, 3 696 cells | middle `latent_time` marginal withheld, `d` = 2/10/20/50 | ~90 GPU-min |
-| `erythroid_ffm_paper` | mouse gastrulation erythroid, 9 815 cells | 3 spaces × 7 arms × 5 seeds | ~4.5 GPU-h |
+| `pancreas_ffm_paper` | Endocrinogenesis, 3 696 cells | middle `latent_time` marginal withheld, `d` = 2/10/20/50 | ~90 GPU-min |
+| `erythroid_ffm_paper` | Mouse gastrulation erythroid, 9 815 cells | 3 spaces × 7 arms × 5 seeds | ~4.5 GPU-h |
 | `itracer_r2_lineage_kernel` | iTracer R2 hindbrain, 2 901 cells | `P` from expression × lineage × velocity kernels | ~3.5 GPU-h |
 
 
@@ -81,8 +59,6 @@ implementation of the same mathematics. Both ship, deliberately.
 
 ## Data and outputs
 
-The derived caches ship; the raw downloads do not.
-
 | Path | What | Rebuild |
 |---|---|---|
 | `pancreas_cache/` | 5 MB — the PCA/velocity cloud | `python -m scripts.core.scvelo_data --rebuild --path <h5ad>` |
@@ -101,11 +77,6 @@ otherwise cost two GPU-days before a single number appeared:
 | `itracer_bench/` | 108 run records (seeds 3–11 at `d` = 2 for `itr_seeds`), ~6 GPU-h |
 | `pancreas_review/`, `pancreas_review_hw/` | the pancreas robustness grid, 2 123 runs, ~38 GPU-h |
 | `erythroid_review/` | the erythroid seed pool and perturbations, 127 runs, ~1 GPU-h |
-
-Records are metrics, not trajectories: alongside the two benchmarks we ship only the
-seed-0, `d` = 2 trajectory slabs the figures draw, and the pancreas grid keeps the
-`t = 1/2` slice of its `d` = 2 runs. Every stage skips a run whose record already exists,
-so delete a record to retrain it and an interrupted pass resumes where it stopped.
 
 
 ## Credits
