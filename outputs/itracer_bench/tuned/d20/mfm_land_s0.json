@@ -1,14 +1,14 @@
 {
  "arm": "mfm_land",
  "arm_diag": {
-  "loss_phase1": 3195.001010580375,
-  "loss_phase2": 5.311112339064515,
+  "loss_phase1": 3194.036050752055,
+  "loss_phase2": 5.105761066278894,
   "ot": {
-   "C_median": 3113.358773779207,
-   "C_min": 974.6585933820858,
+   "C_median": 3109.8692767794205,
+   "C_min": 974.281446601268,
    "n0": 967,
    "n1": 967,
-   "pi_entropy_frac": 0.9930690358191343
+   "pi_entropy_frac": 0.9929454878870633
   }
  },
  "benchmark": "itracer_r2",
@@ -24,26 +24,26 @@
    "W2": 25.313860130200474
   }
  },
- "device": "Tesla V100-SXM2-32GB",
+ "device": "NVIDIA A100-SXM4-80GB",
  "dim": 20,
  "dtype": "torch.float64",
  "endpoint": {
-  "MMD": 0.09737313332361357,
-  "W1": 6.459596911337834,
-  "W2": 6.656753009124322
+  "MMD": 0.12170104503893185,
+  "W1": 6.6305370330538524,
+  "W2": 6.809095258754703
  },
  "fixed": {},
  "floors": {
   "endpoint": {
    "MMD": 0.004258900533649474,
-   "W1": 5.499385932399928,
+   "W1": 5.499385932399929,
    "W2": 5.643261376156474,
    "capped": true,
    "n_draw": 483,
    "n_ref": 967
   },
   "interpolation": {
-   "MMD": 0.007237821725768011,
+   "MMD": 0.0072378217257682755,
    "W1": 7.033935259556439,
    "W2": 7.3487953452082735,
    "capped": true,
@@ -56,6 +56,11 @@
   "batch_size": 256,
   "blur_frac": 0.1,
   "c": 0.9,
+  "cdc_gamma": 1.0,
+  "cdc_k": 256,
+  "cdc_kbw": 8,
+  "cdc_rank": 0,
+  "cdc_sigma_min": 0.0,
   "curly_alpha": 0.01,
   "curly_coupling_batch": 128,
   "curly_k": 20,
@@ -85,9 +90,9 @@
   "width": 64
  },
  "interpolation": {
-  "MMD": 0.45814103997297884,
-  "W1": 14.895266292747829,
-  "W2": 15.18217155880419
+  "MMD": 0.4479824710870015,
+  "W1": 14.660908723908362,
+  "W2": 14.9495163324579
  },
  "model": "mfm_land",
  "p_variant": "lineage_kernel",
@@ -104,7 +109,7 @@
   "n_withheld": 967,
   "t_mid": 0.5
  },
- "train_seconds": 122.50762104988098,
+ "train_seconds": 119.1253604888916,
  "ts_diag": {
   "K_lineage_mean_on_edges": 5.745918481042775,
   "K_velocity_mean_on_edges": 1.0,

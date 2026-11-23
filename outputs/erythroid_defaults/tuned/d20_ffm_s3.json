@@ -1,0 +1,19 @@
+{
+ "arm": "ffm",
+ "config": "tuned",
+ "cos_dist": 0.491404999891917,
+ "dim": 20,
+ "end_w2": 3.7510596929265176,
+ "l2": 1210.0454437255867,
+ "point": {
+  "lam_mult": 30.0,
+  "rho_mult": 0.0003
+ },
+ "seed": 3,
+ "smoke": false,
+ "source": "erythroid_bench/test",
+ "train_seconds": 136.92347836494446,
+ "w2": 4.660505396163286,
+ "w2_true": 4.754567867561994,
+ "w2_true_from_slab": 4.754567861264854
+}

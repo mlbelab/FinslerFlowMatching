@@ -1,34 +1,36 @@
 __pycache__/
 *.py[cod]
+*.egg-info/
+build/
+dist/
 .ipynb_checkpoints/
 .DS_Store
 
-# smoke artefacts (NB_SMOKE=1)
 notebooks/out_smoke/
 notebooks/tables_smoke/
+outputs/*_smoke/
+outputs/**/nets/*
+outputs/**/phat/
+outputs/**/kernels/
+outputs/**/*.pt
+!outputs/forksheet_calibration/nets/sh50_s0.pt
+*.tmp
 
-# Run trees are rebuilt, not versioned.  The exceptions below are the record sets
-# the notebooks would otherwise spend GPU-hours regenerating, plus the handful of
-# trajectory slabs their figures read -- a full run adds ~2 GB of slabs here, and
-# those stay ignored.
-outputs/*
-!outputs/matched_bench/
-!outputs/pancreas_band/
-!outputs/pancreas_noise/
-!outputs/pancreas_review/
-!outputs/pancreas_review_hw/
-!outputs/erythroid_review/
-
-!outputs/erythroid_bench/
-outputs/erythroid_bench/*
-!outputs/erythroid_bench/test/
-!outputs/erythroid_bench/trajectories/
-outputs/erythroid_bench/trajectories/*
-!outputs/erythroid_bench/trajectories/d2_*_s0.npz
-
-!outputs/itracer_bench/
-outputs/itracer_bench/*
-!outputs/itracer_bench/tuned/
-!outputs/itracer_bench/trajectories/
-outputs/itracer_bench/trajectories/*
-!outputs/itracer_bench/trajectories/tuned_d2_*_s0.npz
+data/raw/
+data/*_raw/
+.coverage
+coverage.xml
+htmlcov/
+docs/_build/
+docs/generated/
+data/pancreas_cache/
+data/erythroid_cache/
+data/itracer/*.h5ad
+data/itracer/*.gz
+data/itracer/*.tsv
+notebooks/tables/
+outputs/erythroid_leakage/
+outputs/**/fit_*/
+outputs/**/device/
+outputs/**/slabs/
+docs/notebooks/

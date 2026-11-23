@@ -1,0 +1,18 @@
+{
+ "arm": "curly",
+ "config": "tuned",
+ "cos_dist": 0.4908887783686322,
+ "dim": 50,
+ "end_w2": 5.637730790055276,
+ "l2": 1594.7655726114913,
+ "point": {
+  "curly_alpha": 100000.0
+ },
+ "seed": 2,
+ "smoke": false,
+ "source": "erythroid_bench/test",
+ "train_seconds": 628.2523584365845,
+ "w2": 7.747832728272905,
+ "w2_true": 7.878086386882169,
+ "w2_true_from_slab": 7.878086372017744
+}

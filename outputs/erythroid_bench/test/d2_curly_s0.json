@@ -40,21 +40,26 @@
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.009154025356595714,
-    "l2": 2.0132073601086944,
-    "w2": 0.12408947338586147,
-    "w2_true": 0.16267546993149493,
-    "u_norm_mean": 1.728293297290802,
-    "u_snr": 125.50759887695312,
+    "cos_dist": 0.01148620982654393,
+    "l2": 1.9313577536741895,
+    "w2": 0.18932864845722858,
+    "w2_true": 0.21950854438074502,
+    "u_norm_mean": 1.8704060133298237,
+    "u_snr": 125.90682220458984,
     "velocity_scale": 100.0,
-    "ref_noise_weight_mean": 0.5131370425224304,
-    "ref_noise_weight_saturated_frac": 0.01650366745889187,
-    "ref_nn_dist_median": 0.011099675670266151,
-    "ref_signal_weight_mean": 0.4868629574775696,
+    "ref_noise_weight_mean": 0.5010691285133362,
+    "ref_noise_weight_saturated_frac": 0.0015281174564734101,
+    "ref_nn_dist_median": 0.009605622850358486,
+    "ref_signal_weight_mean": 0.4989308714866638,
     "scored_field": "v_theta",
     "n_target_cells": 2941
   },
@@ -64,23 +69,23 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.9819694987023763,
-    "cos_J_velocity": 0.9746945099967237
+    "P_asymmetry": 0.9822394628943036,
+    "cos_J_velocity": 0.9737751900555714
   },
   "arm_diag": {
     "curly": {
       "geo_iters": 2000,
       "vel_iters": 3000,
-      "loss_geo": 0.06801888074725866,
-      "loss_vel": 0.11475540343672037,
+      "loss_geo": 0.08794565252959728,
+      "loss_vel": 0.13245292507112028,
       "alpha": 0.1,
       "sigma": 0.01,
       "k": 30,
       "net": "release",
       "n_ref": 6544
     },
-    "loss_phase1": 0.06801888074725866,
-    "loss_phase2": 0.11475540343672037,
+    "loss_phase1": 0.08794565252959728,
+    "loss_phase2": 0.13245292507112028,
     "velocity_source": "measured"
   },
   "cloud_diag": {
@@ -96,9 +101,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 0.036388570470936306
+    "velocity_norm_median": 0.04019340305734168
   },
-  "train_seconds": 57.2105815410614,
+  "train_seconds": 83.75962805747986,
   "n_steps": 300,
   "smoke": false
 }

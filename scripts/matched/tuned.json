@@ -1,0 +1,380 @@
+{
+ "sheet": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.000562
+   },
+   "graph_drift": {
+    "a_mult": 1.0
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.0178
+   },
+   "graph_drift": {
+    "a_mult": 1.78
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  }
+ },
+ "pancreas20": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.0316,
+    "lam_mult": 1.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.316,
+    "a_mult": 0.1
+   },
+   "ffm_second": {
+    "rho_mult": 0.01
+   },
+   "graph_drift": {
+    "a_mult": 0.562
+   },
+   "ffm_riem": {
+    "rho_mult": 0.0316,
+    "lam_mult": 1.0
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.01,
+    "lam_mult": 1.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.316,
+    "a_mult": 0.01
+   },
+   "ffm_second": {
+    "rho_mult": 1.0
+   },
+   "graph_drift": {
+    "a_mult": 0.562
+   },
+   "ffm_riem": {
+    "rho_mult": 0.01,
+    "lam_mult": 1.0
+   }
+  }
+ },
+ "pancreas2": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.316,
+    "lam_mult": 0.01
+   },
+   "aniso_fixed": {
+    "rho_mult": 3.16,
+    "a_mult": 1.0
+   },
+   "ffm_second": {
+    "rho_mult": 0.562
+   },
+   "graph_drift": {
+    "a_mult": 0.562
+   },
+   "ffm_riem": {
+    "rho_mult": 0.316,
+    "lam_mult": 0.01
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.316,
+    "lam_mult": 0.01
+   },
+   "aniso_fixed": {
+    "rho_mult": 3.16,
+    "a_mult": 1.0
+   },
+   "ffm_second": {
+    "rho_mult": 0.0316
+   },
+   "graph_drift": {
+    "a_mult": 1.0
+   },
+   "ffm_riem": {
+    "rho_mult": 0.316,
+    "lam_mult": 0.01
+   }
+  }
+ },
+ "erythroid2": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 10.0,
+    "lam_mult": 0.316
+   },
+   "aniso_fixed": {
+    "rho_mult": 31.6,
+    "a_mult": 0.316
+   },
+   "ffm_second": {
+    "rho_mult": 1.0
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 10.0,
+    "lam_mult": 0.316
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 100.0,
+    "lam_mult": 0.316
+   },
+   "aniso_fixed": {
+    "rho_mult": 31.6,
+    "a_mult": 0.316
+   },
+   "ffm_second": {
+    "rho_mult": 0.562
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 100.0,
+    "lam_mult": 0.316
+   }
+  }
+ },
+ "forksheet": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.000562
+   },
+   "graph_drift": {
+    "a_mult": 1.0
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 0.0178
+   },
+   "graph_drift": {
+    "a_mult": 1.78
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  }
+ },
+ "pancreas50": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.01
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.001,
+    "a_mult": 0.316
+   },
+   "ffm_second": {
+    "rho_mult": 0.1
+   },
+   "graph_drift": {
+    "a_mult": 0.1
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.01
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.0316,
+    "lam_mult": 0.01
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.00316,
+    "a_mult": 0.316
+   },
+   "ffm_second": {
+    "rho_mult": 0.1
+   },
+   "graph_drift": {
+    "a_mult": 0.0178
+   },
+   "ffm_riem": {
+    "rho_mult": 0.0316,
+    "lam_mult": 0.01
+   }
+  }
+ },
+ "forksheet_tuned": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.000316,
+    "lam_mult": 0.0316
+   },
+   "aniso_fixed": {
+    "rho_mult": 1.0,
+    "a_mult": 3.16
+   },
+   "ffm_second": {
+    "rho_mult": 10.0
+   },
+   "graph_drift": {
+    "a_mult": 3.16
+   },
+   "ffm_riem": {
+    "rho_mult": 0.000316,
+    "lam_mult": 0.0316
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 1.0,
+    "lam_mult": 3.16
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.1,
+    "a_mult": 0.1
+   },
+   "ffm_second": {
+    "rho_mult": 0.316
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 1.0,
+    "lam_mult": 3.16
+   }
+  }
+ },
+ "erythroid20": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 0.00316,
+    "lam_mult": 10.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.0316,
+    "a_mult": 0.01
+   },
+   "ffm_second": {
+    "rho_mult": 0.00178
+   },
+   "graph_drift": {
+    "a_mult": 0.316
+   },
+   "ffm_riem": {
+    "rho_mult": 0.00316,
+    "lam_mult": 10.0
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.001,
+    "lam_mult": 10.0
+   },
+   "aniso_fixed": {
+    "rho_mult": 0.01,
+    "a_mult": 0.01
+   },
+   "ffm_second": {
+    "rho_mult": 0.0562
+   },
+   "graph_drift": {
+    "a_mult": 0.178
+   },
+   "ffm_riem": {
+    "rho_mult": 0.001,
+    "lam_mult": 10.0
+   }
+  }
+ },
+ "erythroid50": {
+  "common": {
+   "ffm_full": {
+    "rho_mult": 3.16,
+    "lam_mult": 3.16
+   },
+   "aniso_fixed": {
+    "rho_mult": 1.0,
+    "a_mult": 1.0
+   },
+   "ffm_second": {
+    "rho_mult": 0.1
+   },
+   "graph_drift": {
+    "a_mult": 1.0
+   },
+   "ffm_riem": {
+    "rho_mult": 3.16,
+    "lam_mult": 3.16
+   }
+  },
+  "specific": {
+   "ffm_full": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   },
+   "aniso_fixed": {
+    "rho_mult": 1.0,
+    "a_mult": 1.0
+   },
+   "ffm_second": {
+    "rho_mult": 0.316
+   },
+   "graph_drift": {
+    "a_mult": 0.562
+   },
+   "ffm_riem": {
+    "rho_mult": 0.1,
+    "lam_mult": 0.1
+   }
+  }
+ }
+}

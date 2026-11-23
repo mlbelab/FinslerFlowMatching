@@ -1,19 +1,19 @@
 {
  "arm": "aniso_fixed",
  "common": {
-  "W2_end": 5.135499083860568,
-  "W2_mid": 11.579959470679707,
+  "W2_end": 5.080177301511505,
+  "W2_mid": 11.570819558856629,
   "pi_entropy_frac": 0.9969750642776489,
   "t_ot": 0.0,
-  "t_phase1": 91.8,
-  "t_phase3": 16.1,
-  "total_s": 107.8,
-  "val_W2_endpoint": 5.483221351036222,
-  "val_W2_intermediate": 11.698450460185143,
-  "val_objective": 8.590835905610682
+  "t_phase1": 123.0,
+  "t_phase3": 19.4,
+  "total_s": 142.4,
+  "val_W2_endpoint": 5.284319557483405,
+  "val_W2_intermediate": 11.668659568074847,
+  "val_objective": 8.476489562779125
  },
  "diag": {
-  "P_asymmetry": 0.7419736066075452,
+  "P_asymmetry": 0.761473866679396,
   "d": 20,
   "n_end_ref": 1232,
   "n_mid_ref": 1112,
@@ -30,31 +30,31 @@
  "key": "pancreas20",
  "points": {
   "common": {
-   "a_mult": 0.0316,
-   "rho_mult": 0.00316
+   "a_mult": 0.1,
+   "rho_mult": 0.316
   },
   "specific": {
-   "a_mult": 0.1,
-   "rho_mult": 0.1
+   "a_mult": 0.01,
+   "rho_mult": 0.316
   }
  },
  "scales": {
-  "a_bar": 0.34366428077995004,
-  "a_star": 38.836389677122725,
-  "rho_star": 0.6943553728503457
+  "a_bar": 0.37833036695207867,
+  "a_star": 35.41726973925621,
+  "rho_star": 0.694334591083557
  },
  "seed": 0,
  "smoke": false,
  "specific": {
-  "W2_end": 5.130307556405503,
-  "W2_mid": 11.494475466145865,
-  "pi_entropy_frac": 0.9973110556602478,
-  "t_ot": 0.9,
-  "t_phase1": 92.0,
-  "t_phase3": 16.0,
-  "total_s": 108.9,
-  "val_W2_endpoint": 5.360733323396957,
-  "val_W2_intermediate": 11.602682562041794,
-  "val_objective": 8.481707942719375
+  "W2_end": 5.23641914569995,
+  "W2_mid": 11.53433204676697,
+  "pi_entropy_frac": 0.9973666667938232,
+  "t_ot": 1.6,
+  "t_phase1": 123.0,
+  "t_phase3": 19.4,
+  "total_s": 143.9,
+  "val_W2_endpoint": 5.460710896073203,
+  "val_W2_intermediate": 11.631208981162857,
+  "val_objective": 8.54595993861803
  }
 }

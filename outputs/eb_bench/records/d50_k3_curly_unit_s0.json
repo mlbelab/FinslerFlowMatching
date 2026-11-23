@@ -1,0 +1,18 @@
+{
+ "dim": 50,
+ "held": 3,
+ "method": "curly_unit",
+ "seed": 0,
+ "kernel": "velocity",
+ "n_source": 3278,
+ "n_target": 3332,
+ "W1": 10.503991356741336,
+ "W2": 10.71744179871379,
+ "W2_end": 10.445928324085408,
+ "nonfinite": 0.0,
+ "point": {
+  "curly_alpha": 1.0
+ },
+ "seconds": 421.5647227317095,
+ "velocity_scale": 138.1918883068711
+}

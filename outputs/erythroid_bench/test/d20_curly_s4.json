@@ -40,20 +40,25 @@
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.49005350808302556,
-    "l2": 1682.9247325642903,
-    "w2": 6.1339627744380145,
-    "w2_true": 6.290458180379601,
-    "u_norm_mean": 8.252483523264527,
+    "cos_dist": 0.49000383655230195,
+    "l2": 1341.9301262410474,
+    "w2": 6.150799273228891,
+    "w2_true": 6.312839667577569,
+    "u_norm_mean": 6.922799105917414,
     "u_snr": 0.9885272979736328,
     "velocity_scale": 1.0,
     "ref_noise_weight_mean": 1.0,
     "ref_noise_weight_saturated_frac": 1.0,
-    "ref_nn_dist_median": 5.130504608154297,
+    "ref_nn_dist_median": 5.145631313323975,
     "ref_signal_weight_mean": 0.0,
     "scored_field": "v_theta",
     "n_target_cells": 2941
@@ -64,23 +69,23 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.7100891723957036,
-    "cos_J_velocity": 0.265189952991458
+    "P_asymmetry": 0.7120900824338926,
+    "cos_J_velocity": 0.2678352712221388
   },
   "arm_diag": {
     "curly": {
       "geo_iters": 3000,
       "vel_iters": 3000,
-      "loss_geo": 1960952261.12,
-      "loss_vel": 2.210521548986435,
+      "loss_geo": 1961814144.0,
+      "loss_vel": 2.2405482172966003,
       "alpha": 10000.0,
       "sigma": 0.01,
       "k": 30,
       "net": "release",
       "n_ref": 6544
     },
-    "loss_phase1": 1960952261.12,
-    "loss_phase2": 2.210521548986435,
+    "loss_phase1": 1961814144.0,
+    "loss_phase2": 2.2405482172966003,
     "velocity_source": "measured"
   },
   "cloud_diag": {
@@ -96,9 +101,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 807.5948125813487
+    "velocity_norm_median": 755.0675638826455
   },
-  "train_seconds": 183.23533654212952,
+  "train_seconds": 192.14193034172058,
   "n_steps": 300,
   "smoke": false
 }

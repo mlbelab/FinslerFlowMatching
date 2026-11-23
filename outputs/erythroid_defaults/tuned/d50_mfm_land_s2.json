@@ -1,0 +1,18 @@
+{
+ "arm": "mfm_land",
+ "config": "tuned",
+ "cos_dist": 0.4951093357801437,
+ "dim": 50,
+ "end_w2": 6.531446686519607,
+ "l2": 1626.825649108885,
+ "point": {
+  "land_rho": 0.01
+ },
+ "seed": 2,
+ "smoke": false,
+ "source": "erythroid_bench/test",
+ "train_seconds": 316.43390107154846,
+ "w2": 6.727755060931645,
+ "w2_true": 6.85139822254273,
+ "w2_true_from_slab": 6.851398210383671
+}

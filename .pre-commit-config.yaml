@@ -1,0 +1,21 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+      - id: check-yaml
+      - id: check-toml
+      - id: check-merge-conflict
+      - id: check-added-large-files
+        args: [--maxkb=20000]
+      - id: end-of-file-fixer
+        exclude: ^(outputs|data|notebooks|docs/_static)/
+      - id: trailing-whitespace
+        exclude: ^(outputs|data|notebooks)/
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.17.6
+    hooks:
+      - id: ruff
+        args: [--fix]
+
+ci:
+  autoupdate_schedule: quarterly

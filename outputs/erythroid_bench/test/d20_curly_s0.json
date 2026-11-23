@@ -40,20 +40,25 @@
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.489877247711023,
-    "l2": 1685.9516358439137,
-    "w2": 6.157388943595569,
-    "w2_true": 6.322755173148137,
-    "u_norm_mean": 8.267914483795563,
+    "cos_dist": 0.48976131995519007,
+    "l2": 1348.10855489095,
+    "w2": 6.159676104677104,
+    "w2_true": 6.32510379470339,
+    "u_norm_mean": 6.982959336688121,
     "u_snr": 0.987348198890686,
     "velocity_scale": 1.0,
     "ref_noise_weight_mean": 1.0,
     "ref_noise_weight_saturated_frac": 1.0,
-    "ref_nn_dist_median": 5.107803821563721,
+    "ref_nn_dist_median": 5.112525463104248,
     "ref_signal_weight_mean": 0.0,
     "scored_field": "v_theta",
     "n_target_cells": 2941
@@ -64,23 +69,23 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.7100891723957036,
-    "cos_J_velocity": 0.265189952991458
+    "P_asymmetry": 0.7120900824338926,
+    "cos_J_velocity": 0.2678352712221388
   },
   "arm_diag": {
     "curly": {
       "geo_iters": 3000,
       "vel_iters": 3000,
-      "loss_geo": 1972262091.52,
-      "loss_vel": 2.1956501042842866,
+      "loss_geo": 1973125646.08,
+      "loss_vel": 2.2032492864131927,
       "alpha": 10000.0,
       "sigma": 0.01,
       "k": 30,
       "net": "release",
       "n_ref": 6544
     },
-    "loss_phase1": 1972262091.52,
-    "loss_phase2": 2.1956501042842866,
+    "loss_phase1": 1973125646.08,
+    "loss_phase2": 2.2032492864131927,
     "velocity_source": "measured"
   },
   "cloud_diag": {
@@ -96,9 +101,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 807.5948125813487
+    "velocity_norm_median": 755.0675638826455
   },
-  "train_seconds": 182.67497038841248,
+  "train_seconds": 263.09837436676025,
   "n_steps": 300,
   "smoke": false
 }

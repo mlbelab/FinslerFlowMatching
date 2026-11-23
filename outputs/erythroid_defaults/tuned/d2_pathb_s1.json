@@ -1,0 +1,20 @@
+{
+ "arm": "pathb",
+ "config": "tuned",
+ "cos_dist": 0.016333786767596992,
+ "dim": 2,
+ "end_w2": 0.24927066784340296,
+ "l2": 1.3892352513472235,
+ "point": {
+  "lam_mult": 30.0,
+  "rho_mult": 0.01,
+  "width_mult": 0.3
+ },
+ "seed": 1,
+ "smoke": false,
+ "source": "erythroid_bench/test",
+ "train_seconds": 68.40237736701965,
+ "w2": 0.22596172306338982,
+ "w2_true": 0.2714015420676571,
+ "w2_true_from_slab": 0.2714015418860542
+}

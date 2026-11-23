@@ -6,7 +6,7 @@
   "block": "harness",
   "budget": "release-matched",
   "override": {
-    "curly_alpha": 10000.0
+    "curly_alpha": 100000.0
   },
   "inherited": null,
   "hparams": {
@@ -33,27 +33,32 @@
     "phase1_iters": 3000,
     "phase2_iters": 3000,
     "grad_clip": 5.0,
-    "curly_alpha": 10000.0,
+    "curly_alpha": 100000.0,
     "curly_sigma": 0.01,
     "curly_k": 30,
     "curly_coupling_batch": 128,
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.4910810213287671,
-    "l2": 1976.4738497924807,
-    "w2": 7.755633628949362,
-    "w2_true": 7.882211713447654,
-    "u_norm_mean": 9.007128632962704,
+    "cos_dist": 0.4908887783686322,
+    "l2": 1594.7655726114913,
+    "w2": 7.747832728272905,
+    "w2_true": 7.878086386882169,
+    "u_norm_mean": 7.695050827165445,
     "u_snr": 0.9917492270469666,
     "velocity_scale": 1.0,
     "ref_noise_weight_mean": 1.0,
     "ref_noise_weight_saturated_frac": 1.0,
-    "ref_nn_dist_median": 6.980295658111572,
+    "ref_nn_dist_median": 6.9821600914001465,
     "ref_signal_weight_mean": 0.0,
     "scored_field": "v_theta",
     "n_target_cells": 2941
@@ -64,23 +69,23 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.6932615218641442,
-    "cos_J_velocity": 0.1165657549050351
+    "P_asymmetry": 0.6944513677803907,
+    "cos_J_velocity": 0.1169730855811797
   },
   "arm_diag": {
     "curly": {
       "geo_iters": 3000,
       "vel_iters": 3000,
-      "loss_geo": 846070122.24,
-      "loss_vel": 1.409503937959671,
-      "alpha": 10000.0,
+      "loss_geo": 84511301959.68,
+      "loss_vel": 1.4117008197307586,
+      "alpha": 100000.0,
       "sigma": 0.01,
       "k": 30,
       "net": "release",
       "n_ref": 6544
     },
-    "loss_phase1": 846070122.24,
-    "loss_phase2": 1.409503937959671,
+    "loss_phase1": 84511301959.68,
+    "loss_phase2": 1.4117008197307586,
     "velocity_source": "measured"
   },
   "cloud_diag": {
@@ -96,9 +101,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 885.9145577873842
+    "velocity_norm_median": 831.3932402290518
   },
-  "train_seconds": 413.6091709136963,
+  "train_seconds": 628.2523584365845,
   "n_steps": 300,
   "smoke": false
 }

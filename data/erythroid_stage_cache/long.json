@@ -1,0 +1,36 @@
+{
+ "split": "long",
+ "source": [
+  "E7.0",
+  "E7.25",
+  "E7.5",
+  "E7.75"
+ ],
+ "held": [
+  "E8.0",
+  "E8.25"
+ ],
+ "target": [
+  "E8.5"
+ ],
+ "counts": {
+  "E7.0": 43,
+  "E7.25": 65,
+  "E7.5": 471,
+  "E7.75": 1709,
+  "E8.0": 2811,
+  "E8.25": 1695,
+  "E8.5": 3021
+ },
+ "n_genes": 2000,
+ "n_velocity_genes": 554,
+ "gene_overlap": 2000,
+ "projection_check": 5.257254945689738e-05,
+ "normalise_target": 13809.0,
+ "stripped": {
+  "obsm": [
+   "X_pca"
+  ]
+ },
+ "seconds": 2244.334256887436
+}

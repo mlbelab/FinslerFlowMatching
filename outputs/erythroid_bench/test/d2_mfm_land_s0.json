@@ -40,21 +40,26 @@
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.011176668742361168,
-    "l2": 1.8882444830735519,
-    "w2": 0.2711080301506043,
-    "w2_true": 0.2850375242098318,
-    "u_norm_mean": 1.7121487577756247,
-    "u_snr": 125.58719635009766,
+    "cos_dist": 0.012677080724388355,
+    "l2": 1.566935287316639,
+    "w2": 0.27081739305224856,
+    "w2_true": 0.284614361062346,
+    "u_norm_mean": 1.8881340670585631,
+    "u_snr": 123.07501220703125,
     "velocity_scale": 100.0,
-    "ref_noise_weight_mean": 0.515294075012207,
+    "ref_noise_weight_mean": 0.5153928995132446,
     "ref_noise_weight_saturated_frac": 0.01894865557551384,
-    "ref_nn_dist_median": 0.012044820934534073,
-    "ref_signal_weight_mean": 0.48470592498779297,
+    "ref_nn_dist_median": 0.01212281733751297,
+    "ref_signal_weight_mean": 0.48460710048675537,
     "scored_field": "v_theta",
     "n_target_cells": 2941
   },
@@ -64,19 +69,19 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.9819694987023763,
-    "cos_J_velocity": 0.9746945099967237
+    "P_asymmetry": 0.9822394628943036,
+    "cos_J_velocity": 0.9737751900555714
   },
   "arm_diag": {
     "ot": {
       "n0": 600,
       "n1": 600,
-      "C_median": 2777.443359375,
-      "C_min": 797.2052001953125,
-      "pi_entropy_frac": 0.964923435629761
+      "C_median": 2777.28466796875,
+      "C_min": 796.8069458007812,
+      "pi_entropy_frac": 0.9647996966291341
     },
-    "loss_phase1": 3116.23634765625,
-    "loss_phase2": 0.5686774840950966
+    "loss_phase1": 3116.7124487304686,
+    "loss_phase2": 0.5660377976298332
   },
   "cloud_diag": {
     "n_cells": 9815,
@@ -91,9 +96,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 0.036388570470936306
+    "velocity_norm_median": 0.04019340305734168
   },
-  "train_seconds": 26.753832578659058,
+  "train_seconds": 35.783446311950684,
   "n_steps": 300,
   "smoke": false
 }

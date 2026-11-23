@@ -1,0 +1,17 @@
+{
+ "dim": 20,
+ "held": 3,
+ "method": "mfm_land",
+ "seed": 0,
+ "kernel": "velocity",
+ "n_source": 3278,
+ "n_target": 3332,
+ "W1": 7.3680516530526114,
+ "W2": 7.664530307091305,
+ "W2_end": 7.654120090359606,
+ "nonfinite": 0.0,
+ "point": {
+  "land_rho": 0.3
+ },
+ "seconds": 105.36814439669251
+}

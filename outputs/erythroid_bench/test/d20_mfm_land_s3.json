@@ -40,20 +40,25 @@
     "curly_net": "release",
     "sigma": 0.15,
     "sbm_iters": 3000,
-    "noise_off_after": 1.0
+    "noise_off_after": 1.0,
+    "cdc_gamma": 1.0,
+    "cdc_rank": 0,
+    "cdc_sigma_min": 0.0,
+    "cdc_k": 256,
+    "cdc_kbw": 8
   },
   "scales": {},
   "metrics": {
-    "cos_dist": 0.49450926244258875,
-    "l2": 1671.4115831502281,
-    "w2": 4.665056936182613,
-    "w2_true": 4.765069438119451,
-    "u_norm_mean": 7.761310424556335,
+    "cos_dist": 0.4944022454818092,
+    "l2": 1348.9792111206054,
+    "w2": 4.666916028548154,
+    "w2_true": 4.7668356347445515,
+    "u_norm_mean": 6.569838440194726,
     "u_snr": 0.983963668346405,
     "velocity_scale": 1.0,
     "ref_noise_weight_mean": 1.0,
     "ref_noise_weight_saturated_frac": 1.0,
-    "ref_nn_dist_median": 3.3232593536376953,
+    "ref_nn_dist_median": 3.326317310333252,
     "ref_signal_weight_mean": 0.0,
     "scored_field": "v_theta",
     "n_target_cells": 2941
@@ -64,19 +69,19 @@
     "n_p1": 3272,
     "P_k": 15,
     "P_softmax_scale": 4.0,
-    "P_asymmetry": 0.7100891723957036,
-    "cos_J_velocity": 0.265189952991458
+    "P_asymmetry": 0.7120900824338926,
+    "cos_J_velocity": 0.2678352712221388
   },
   "arm_diag": {
     "ot": {
       "n0": 600,
       "n1": 600,
-      "C_median": 982.3949584960938,
+      "C_median": 982.39501953125,
       "C_min": 137.5377655029297,
       "pi_entropy_frac": 0.9860380797969795
     },
-    "loss_phase1": 1069.1321301269531,
-    "loss_phase2": 1.821512495279312
+    "loss_phase1": 1069.132131958008,
+    "loss_phase2": 1.821571147441864
   },
   "cloud_diag": {
     "n_cells": 9815,
@@ -91,9 +96,9 @@
       0.7517739534378051,
       1.0
     ],
-    "velocity_norm_median": 807.5948125813487
+    "velocity_norm_median": 755.0675638826455
   },
-  "train_seconds": 134.44943714141846,
+  "train_seconds": 124.1619074344635,
   "n_steps": 300,
   "smoke": false
 }

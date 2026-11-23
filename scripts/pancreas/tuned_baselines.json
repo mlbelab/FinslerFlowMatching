@@ -1,0 +1,42 @@
+{
+ "2": {
+  "sf2m": {
+   "width_mult": 1.0
+  },
+  "cdcfm": {
+   "cdc_gamma": 256.0,
+   "cdc_rank": 0,
+   "cdc_sigma_min": 0.3
+  }
+ },
+ "10": {
+  "sf2m": {
+   "width_mult": 0.3
+  },
+  "cdcfm": {
+   "cdc_gamma": 1024.0,
+   "cdc_rank": 2,
+   "cdc_sigma_min": 0.0
+  }
+ },
+ "20": {
+  "sf2m": {
+   "width_mult": 0.1
+  },
+  "cdcfm": {
+   "cdc_gamma": 256.0,
+   "cdc_rank": 2,
+   "cdc_sigma_min": 0.0
+  }
+ },
+ "50": {
+  "sf2m": {
+   "width_mult": 0.03
+  },
+  "cdcfm": {
+   "cdc_gamma": 64.0,
+   "cdc_rank": 8,
+   "cdc_sigma_min": 0.0
+  }
+ }
+}

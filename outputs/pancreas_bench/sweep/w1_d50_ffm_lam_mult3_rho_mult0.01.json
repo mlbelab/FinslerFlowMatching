@@ -1,0 +1,20 @@
+{
+ "dim": 50,
+ "wave": 1,
+ "index": 31,
+ "arm": "ffm",
+ "point": {
+  "rho_mult": 0.01,
+  "lam_mult": 3.0
+ },
+ "W2_endpoint": 8.377659143495514,
+ "W2_intermediate": 12.901341209199023,
+ "objective": 10.63950017634727,
+ "n_end_cells": 185,
+ "n_val_cells": 120,
+ "n_train": 2094,
+ "seed": 0,
+ "train_s": 328.1,
+ "P_asymmetry": 0.6884052748463981,
+ "cos_J_velocity": 0.2399332054874753
+}

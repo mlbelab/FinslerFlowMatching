@@ -1,0 +1,18 @@
+{
+ "arm": "cfm",
+ "config": "tuned",
+ "cos_dist": 0.14306878844896956,
+ "dim": 2,
+ "end_w2": 0.18472785337050715,
+ "l2": 2.4163869571685805,
+ "point": {
+  "blur_frac": 30.0
+ },
+ "seed": 1,
+ "smoke": false,
+ "source": "erythroid_bench/test",
+ "train_seconds": 8.784510374069214,
+ "w2": 0.6333321059102704,
+ "w2_true": 0.6680582368368552,
+ "w2_true_from_slab": 0.6680582363130089
+}
